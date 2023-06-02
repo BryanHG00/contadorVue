@@ -10,10 +10,9 @@
   const reset = () => contador.value = 0;
 
   const fav = ()=> {
-    if(contador.value != ""){
+    if(contador.value != "" || contador.value === 0){
       favoritos.value.push(contador.value);
     }
-    
   }
 
   const nofav = () =>{
